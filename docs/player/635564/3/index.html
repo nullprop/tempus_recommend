@@ -1,0 +1,1551 @@
+<!doctype html>
+
+<title>Tempus map recommendations</title>
+<meta charset=utf-8>
+
+<head>
+    <style type="text/css">
+        h1 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        #heading {
+            margin-bottom: 1rem;
+        }
+
+        .error {
+            color: red;
+        }
+
+        #class-id {
+            margin-left: 1.5rem;
+            width: 6rem;
+        }
+
+        #player-id {
+            margin-left: 0.1rem;
+            width: 6rem;
+        }
+
+        button {
+            min-width: 5rem;
+            min-height: 2.5rem;
+            cursor: pointer;
+            margin-left: 3.9rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<div id="heading">
+    <h1>Tempus map recommendations</h1>
+    <span>Database date 2024-05-25 (yyyy-mm-dd)</span><br />
+    <span>You can find your player id by looking up your profile on tempus, e.g. <a target="_blank"
+            rel="noreferrer noopener"
+            href="https://tempus2.xyz/players/68414">https://tempus2.xyz/players/68414</a></span><br />
+    <span><a href="../../../">&lt;-- Back to index</a></span>
+</div>
+
+<span>Player id</span>
+<input id="player-id" type="number" value="635564" />
+
+<br />
+
+<span>Class</span>
+<select id="class-id">
+    <option value="3">Soldier</option>
+    <option value="4">Demoman</option>
+</select>
+
+<br />
+
+<button id="submit">Hit me</button>
+
+<div id="result">
+    
+    
+    <span>jump_odd_v2 - 0.3256009719983796</span><br />
+    
+    <span>jump_iblis - 0.3063426737338493</span><br />
+    
+    <span>jump_triangle - 0.2947190611469025</span><br />
+    
+    <span>jump_achlys - 0.2828409426621011</span><br />
+    
+    <span>jump_cabal_b6 - 0.26843591209788215</span><br />
+    
+    <span>jump_primary_rc1 - 0.2513442394257215</span><br />
+    
+    <span>jump_nine_final - 0.2385956305174223</span><br />
+    
+    <span>conc_concept - 0.23487445790712638</span><br />
+    
+    <span>jump_garbage_a7 - 0.23231831717282764</span><br />
+    
+    <span>jump_hana - 0.2314429856489319</span><br />
+    
+    <span>jump_urbex_rc3 - 0.2264318344237561</span><br />
+    
+    <span>jump_rust_rc3 - 0.2253394084183872</span><br />
+    
+    <span>jump_zawty_rc1 - 0.221054740145527</span><br />
+    
+    <span>jump_x - 0.22013193971536277</span><br />
+    
+    <span>jump_anothermap_rc3 - 0.2176743864628395</span><br />
+    
+    <span>jump_frogspit - 0.20290489473669482</span><br />
+    
+    <span>jump_daeva - 0.1993181112143745</span><br />
+    
+    <span>jump_rat_rc4 - 0.19608523460097455</span><br />
+    
+    <span>jump_moria_b6 - 0.19035073008995837</span><br />
+    
+    <span>jump_super_redo - 0.18879450578352505</span><br />
+    
+    <span>df_recapture_final - 0.1829894819383474</span><br />
+    
+    <span>jump_alder_rc3 - 0.18138269402245008</span><br />
+    
+    <span>jump_luminous_rc5 - 0.18120497232613744</span><br />
+    
+    <span>jump_eu - 0.18085776883534335</span><br />
+    
+    <span>jump_onion_v2 - 0.18005560866570228</span><br />
+    
+    <span>jump_celeriix - 0.1758548690789484</span><br />
+    
+    <span>rj_rckteer - 0.17544028962237912</span><br />
+    
+    <span>jump_sheer_v4 - 0.1732635794845856</span><br />
+    
+    <span>jump_rvr_b1 - 0.16920730406157708</span><br />
+    
+    <span>jump_haze - 0.16243625564018854</span><br />
+    
+    <span>jump_gervais_v3 - 0.1621876255206807</span><br />
+    
+    <span>jump_causatham_rc5 - 0.1578708705513476</span><br />
+    
+    <span>jump_hobo - 0.15773479495146758</span><br />
+    
+    <span>jump_beefoween_b1 - 0.15716426294037178</span><br />
+    
+    <span>jump_blossom_s3f_fix2 - 0.14572787624642056</span><br />
+    
+    <span>jump_galaktikon_b2 - 0.14444683599699576</span><br />
+    
+    <span>jump_wagyu_a5 - 0.1443011263797452</span><br />
+    
+    <span>jump_kumo - 0.14428574065055114</span><br />
+    
+    <span>jump_radiix - 0.1408521573161214</span><br />
+    
+    <span>jump_zirco_b1 - 0.13998353742605005</span><br />
+    
+    <span>jump_tissue - 0.1386359736390785</span><br />
+    
+    <span>jump_glassydev_rc3 - 0.13661710003808222</span><br />
+    
+    <span>jump_yes_b4 - 0.1334887118698342</span><br />
+    
+    <span>jump_passion_fix2 - 0.13131221965287485</span><br />
+    
+    <span>jump_tempus_b5 - 0.12971993411975144</span><br />
+    
+    <span>jump_vidarydkling_rc5 - 0.12959304856175075</span><br />
+    
+    <span>jump_eight_b5 - 0.12747604675126262</span><br />
+    
+    <span>jump_echo - 0.12540911665618018</span><br />
+    
+    <span>jump_karlson_v4 - 0.12435954772237844</span><br />
+    
+    <span>jump_six_a6 - 0.12380510818413448</span><br />
+    
+    <span>jump_depression_a11 - 0.1226505969297083</span><br />
+    
+    <span>jump_pow - 0.12263165254801224</span><br />
+    
+    <span>jump_zilent - 0.11638982890430093</span><br />
+    
+    <span>jump_tombrady_v10 - 0.11553913281333235</span><br />
+    
+    <span>jump_arctic_a2 - 0.11549633584761801</span><br />
+    
+    <span>jump_azazel - 0.11506905799787394</span><br />
+    
+    <span>jump_kek2_rc2 - 0.11207224930596715</span><br />
+    
+    <span>jump_ember_rc6 - 0.1119558559490062</span><br />
+    
+    <span>jump_whitescreen_b1 - 0.11180537477083269</span><br />
+    
+    <span>jump_shapes_rc2 - 0.11178011352048714</span><br />
+    
+    <span>jump_urgent_final - 0.11159494944623569</span><br />
+    
+    <span>jump_dystopia - 0.11153975690085813</span><br />
+    
+    <span>jump_kjr_a16 - 0.11149773376346415</span><br />
+    
+    <span>jump_ballin_a3 - 0.11064273865510608</span><br />
+    
+    <span>jump_adam - 0.11020787851433332</span><br />
+    
+    <span>jump_shelter_b1 - 0.11002585051642845</span><br />
+    
+    <span>jump_mutegod - 0.10941243846520361</span><br />
+    
+    <span>jump_laevateinn_final - 0.10931921545890075</span><br />
+    
+    <span>jump_drexen2 - 0.10928760756056137</span><br />
+    
+    <span>jump_illuminum_tmps - 0.10800717999547096</span><br />
+    
+    <span>jump_software - 0.1073220011422339</span><br />
+    
+    <span>jump_aten_test - 0.10680327234820976</span><br />
+    
+    <span>jump_ataronchronon_b2 - 0.106787464245251</span><br />
+    
+    <span>jump_half - 0.10639843041777095</span><br />
+    
+    <span>jump_phobos_zip - 0.10570508230278243</span><br />
+    
+    <span>jump_vertuosic_rc6 - 0.10501309004168294</span><br />
+    
+    <span>jump_boogiewoogie_a29 - 0.10456444292542433</span><br />
+    
+    <span>jump_depleted - 0.10425214551578646</span><br />
+    
+    <span>jump_arcane_final - 0.10403587960313619</span><br />
+    
+    <span>jump_pastel_b2 - 0.10371293540140357</span><br />
+    
+    <span>jump_halcyon_b3 - 0.10342290585040825</span><br />
+    
+    <span>jump_underworld_v2_zip - 0.10316955222370017</span><br />
+    
+    <span>jump_benny - 0.10290219913353654</span><br />
+    
+    <span>jump_silly_a8 - 0.1025625855905358</span><br />
+    
+    <span>jump_classics_a3 - 0.10219083833236024</span><br />
+    
+    <span>jump_observatory_fix4 - 0.10104952322144083</span><br />
+    
+    <span>jump_taylor_swift - 0.10086335737768609</span><br />
+    
+    <span>jump_happygonk_b7 - 0.10072011951401474</span><br />
+    
+    <span>jump_corona_v2 - 0.09988632425180267</span><br />
+    
+    <span>jump_confiote_rc1 - 0.099578750908917</span><br />
+    
+    <span>jump_sudaca - 0.09946153315575648</span><br />
+    
+    <span>jump_boredgorge - 0.09906587013231237</span><br />
+    
+    <span>jump_sucks - 0.09808719545197446</span><br />
+    
+    <span>jump_rutabaga_rc2 - 0.09670387240498453</span><br />
+    
+    <span>jump_beryllium_v5 - 0.09667697018817585</span><br />
+    
+    <span>jump_plunder_final - 0.0952530724076304</span><br />
+    
+    <span>jump_deep_final - 0.09516038471868377</span><br />
+    
+    <span>jump_starve - 0.09299152932729139</span><br />
+    
+    <span>jump_insomnia_a8 - 0.0924815627653917</span><br />
+    
+    <span>jump_blackout_a2 - 0.09164252034891977</span><br />
+    
+    <span>jump_squared_b2 - 0.09149676824681927</span><br />
+    
+    <span>jump_orbital_rc1_zip - 0.09064626650697462</span><br />
+    
+    <span>jump_attached_b2 - 0.09059066012124062</span><br />
+    
+    <span>jump_greenguy_rc2 - 0.09001016832250057</span><br />
+    
+    <span>jump_sharp_b3 - 0.08901792224678971</span><br />
+    
+    <span>jump_crypt - 0.08895065653758275</span><br />
+    
+    <span>jump_marigold - 0.08806769788462541</span><br />
+    
+    <span>jump_escape_rc4 - 0.08748820861071001</span><br />
+    
+    <span>jump_orange_v2 - 0.08647612784244359</span><br />
+    
+    <span>jump_a_b3 - 0.08645596593757433</span><br />
+    
+    <span>jump_duality_tpn - 0.08637162767632901</span><br />
+    
+    <span>jump_lombardi - 0.0861643649904993</span><br />
+    
+    <span>jump_joa_v2 - 0.0859312512522345</span><br />
+    
+    <span>jump_aura_b4 - 0.08472836289072068</span><br />
+    
+    <span>jump_skyscraper_v2 - 0.08440576964291284</span><br />
+    
+    <span>jump_drexen - 0.08412224725230517</span><br />
+    
+    <span>jump_vape_rc3 - 0.08408056842000287</span><br />
+    
+    <span>jump_housebeta - 0.0837921942751667</span><br />
+    
+    <span>jump_muffin_b4 - 0.08270979889614906</span><br />
+    
+    <span>jump_beefster - 0.08210133761643673</span><br />
+    
+    <span>jump_concrete_rc1 - 0.0817899702126151</span><br />
+    
+    <span>jump_five_b2 - 0.08139712482026187</span><br />
+    
+    <span>jump_uranium_v5 - 0.08131843219503601</span><br />
+    
+    <span>jump_vespertine_rc3 - 0.08114506445407016</span><br />
+    
+    <span>jump_smarticlee - 0.08111485181317593</span><br />
+    
+    <span>jump_testalla_final - 0.0807959406129848</span><br />
+    
+    <span>jump_tutankhamun - 0.07988809786159479</span><br />
+    
+    <span>jump_stripe_b5 - 0.07964275985868924</span><br />
+    
+    <span>jump_aznbob_fixed - 0.0796069928802009</span><br />
+    
+    <span>jump_beef - 0.0790494573406409</span><br />
+    
+    <span>jump_glassydev_final - 0.07899836549520908</span><br />
+    
+    <span>jump_across_a27 - 0.07851897582680535</span><br />
+    
+    <span>jump_vendetta - 0.07837847809412116</span><br />
+    
+    <span>jump_asshole_a3 - 0.07775799184340303</span><br />
+    
+    <span>jump_sira2 - 0.07747146818537123</span><br />
+    
+    <span>jump_ninjacookie_final - 0.0772261092407043</span><br />
+    
+    <span>jump_and - 0.07705402082554498</span><br />
+    
+    <span>jump_freezeflame_easy - 0.07681690212010361</span><br />
+    
+    <span>jump_broccoli - 0.07595381233355177</span><br />
+    
+    <span>jump_miner - 0.07535443698990855</span><br />
+    
+    <span>jump_bromelia_final - 0.07466590958725301</span><br />
+    
+    <span>jump_sonni_a6 - 0.074415001514955</span><br />
+    
+    <span>jump_pump - 0.07430575944031098</span><br />
+    
+    <span>jump_yucca - 0.07388088108855878</span><br />
+    
+    <span>jump_lobsterfight - 0.0738045385595199</span><br />
+    
+    <span>jump_lithium_fix2_bmv - 0.07309258285464597</span><br />
+    
+    <span>jump_nepal_rc4 - 0.0717402905486801</span><br />
+    
+    <span>jump_estrogen_a4 - 0.07155209636647844</span><br />
+    
+    <span>jump_triplepre_b8 - 0.0712202283028667</span><br />
+    
+    <span>jump_ring_final - 0.07119620243958963</span><br />
+    
+    <span>jump_kola - 0.07116059634559598</span><br />
+    
+    <span>jump_noob - 0.07105709268070734</span><br />
+    
+    <span>jump_joke_b4 - 0.07066673967361393</span><br />
+    
+    <span>jump_free_b2 - 0.06974460184834311</span><br />
+    
+    <span>jump_segment_rc3 - 0.06917780884939008</span><br />
+    
+    <span>jump_sylvan - 0.0689819784087955</span><br />
+    
+    <span>jump_volcanic_zip - 0.06896565923313333</span><br />
+    
+    <span>jump_twix_b4 - 0.06831198790266317</span><br />
+    
+    <span>jump_fastnfar_b1 - 0.06825130028334223</span><br />
+    
+    <span>jump_unclesam - 0.06807380244624983</span><br />
+    
+    <span>jump_cow - 0.0676642871403697</span><br />
+    
+    <span>jump_snowshot_v3 - 0.06760223072646042</span><br />
+    
+    <span>jump_ravioliix_tpn - 0.06737701202400166</span><br />
+    
+    <span>jump_primal_rc7 - 0.06706219501761235</span><br />
+    
+    <span>jump_illusion_final - 0.06674685202874212</span><br />
+    
+    <span>jump_klanana - 0.0665462765532268</span><br />
+    
+    <span>jump_tshirt - 0.06551866866282169</span><br />
+    
+    <span>jump_attached2_rcx - 0.06400614594382843</span><br />
+    
+    <span>jump_zero - 0.06299522855729288</span><br />
+    
+    <span>jump_ayers2_a8_zip - 0.06281033313581594</span><br />
+    
+    <span>jump_prostate_b4 - 0.06192040772320923</span><br />
+    
+    <span>jump_airshift_a4 - 0.0616871766504277</span><br />
+    
+    <span>jump_revenant - 0.06168447330463955</span><br />
+    
+    <span>jump_leicht_redo - 0.06151102306494963</span><br />
+    
+    <span>jump_protactinium - 0.06150904272452985</span><br />
+    
+    <span>jump_samurai_b3 - 0.06058236943919406</span><br />
+    
+    <span>jump_justroll_b1 - 0.06037293472660343</span><br />
+    
+    <span>rj_rckteer_adv_v2 - 0.06033566235282045</span><br />
+    
+    <span>jump_bomb - 0.0600855001662476</span><br />
+    
+    <span>jump_neptune_rc1 - 0.05998306071854499</span><br />
+    
+    <span>jump_waltz_rc6 - 0.05964791003544301</span><br />
+    
+    <span>jump_proto_a2 - 0.05913093696081039</span><br />
+    
+    <span>jump_facility - 0.05909109168504925</span><br />
+    
+    <span>jump_hotcoffee_b1 - 0.05862194671523675</span><br />
+    
+    <span>jump_ohjeez_v2 - 0.05788176660665057</span><br />
+    
+    <span>jump_5holers_final - 0.057835519950445176</span><br />
+    
+    <span>jump_inimica_rc2 - 0.05778152127158999</span><br />
+    
+    <span>jump_spaghetti_v2 - 0.05775320709832003</span><br />
+    
+    <span>jump_sketchy_final - 0.057442408055761666</span><br />
+    
+    <span>jump_fart2_final - 0.057062240687910507</span><br />
+    
+    <span>jump_straight - 0.05651219641745445</span><br />
+    
+    <span>jump_infernum_rc2 - 0.056485681055782264</span><br />
+    
+    <span>jump_pdidey - 0.05646675095755833</span><br />
+    
+    <span>jump_grape_final - 0.05604528492052034</span><br />
+    
+    <span>jump_fayte_final - 0.055749139226228865</span><br />
+    
+    <span>jump_zuza_rc2 - 0.05474905071049505</span><br />
+    
+    <span>jump_doom_final - 0.05449455239486531</span><br />
+    
+    <span>jump_grotto_rc2 - 0.05445731459421899</span><br />
+    
+    <span>jump_ouryoku - 0.05420018062310201</span><br />
+    
+    <span>jump_dad - 0.054042714222727696</span><br />
+    
+    <span>jump_yona_b2 - 0.05401762117343505</span><br />
+    
+    <span>jump_armature_final_zip - 0.05390386463427034</span><br />
+    
+    <span>jump_compound - 0.0536181475431655</span><br />
+    
+    <span>jump_negative_b5 - 0.05336593799295718</span><br />
+    
+    <span>jump_lathy_final - 0.053300604831318314</span><br />
+    
+    <span>jump_forest_rc4 - 0.053235565913001555</span><br />
+    
+    <span>sj_providence_tf - 0.052675392187758206</span><br />
+    
+    <span>jump_khoa - 0.05190371285045032</span><br />
+    
+    <span>jump_asdf - 0.05180965386893291</span><br />
+    
+    <span>jump_bounce - 0.051613082913753675</span><br />
+    
+    <span>jump_andromeda - 0.0505466141409885</span><br />
+    
+    <span>jump_mazzo - 0.050077470051193194</span><br />
+    
+    <span>jump_murus_b3 - 0.05005583392315222</span><br />
+    
+    <span>jump_virtuoso_tpn - 0.049921179527578324</span><br />
+    
+    <span>jump_ruelee_a6 - 0.049555776304247554</span><br />
+    
+    <span>jump_mire - 0.04934257618486301</span><br />
+    
+    <span>jump_relicta_rc2 - 0.04893273592471069</span><br />
+    
+    <span>jump_areae_b2 - 0.04855054168556276</span><br />
+    
+    <span>jump_aris_a3 - 0.04845905577703648</span><br />
+    
+    <span>jump_acepogo - 0.04684813443489219</span><br />
+    
+    <span>jump_ontra - 0.04616470543813879</span><br />
+    
+    <span>jump_evac_a3 - 0.045741992260480514</span><br />
+    
+    <span>jump_authn_b6 - 0.045389787467964085</span><br />
+    
+    <span>jump_ozone - 0.045028353263185356</span><br />
+    
+    <span>jump_ipos - 0.045017596699557946</span><br />
+    
+    <span>jump_elysium_fn - 0.04468708729039582</span><br />
+    
+    <span>jump_flashblack - 0.043702631933505695</span><br />
+    
+    <span>jump_hopstep2_rc7 - 0.043615540908319476</span><br />
+    
+    <span>jump_festivus - 0.043542747026003505</span><br />
+    
+    <span>jump_avalanche - 0.04353848639154993</span><br />
+    
+    <span>jump_demolition - 0.043414361341006194</span><br />
+    
+    <span>jump_cubic_zip - 0.04338462433987891</span><br />
+    
+    <span>jump_dicks_c - 0.04329631331453177</span><br />
+    
+    <span>jump_prism_final - 0.04317104033167934</span><br />
+    
+    <span>jump_ring2 - 0.043046091964640404</span><br />
+    
+    <span>jump_psionic - 0.04301980250576361</span><br />
+    
+    <span>jump_jasmine - 0.043003353763583524</span><br />
+    
+    <span>jump_nebuchadnezzar_final - 0.04269523259939036</span><br />
+    
+    <span>jump_froyo_b3 - 0.04250152642916568</span><br />
+    
+    <span>jump_puni_a4a - 0.042074984133247686</span><br />
+    
+    <span>jump_weird - 0.04185268104629394</span><br />
+    
+    <span>jump_data_final - 0.041275161472406535</span><br />
+    
+    <span>jump_diabarha_b2 - 0.040850293079616</span><br />
+    
+    <span>jump_amazon_b1 - 0.04020660591385741</span><br />
+    
+    <span>jump_bane - 0.04007267356302237</span><br />
+    
+    <span>jump_mhx_b1 - 0.03984933156008663</span><br />
+    
+    <span>jump_oreotachi_b3 - 0.03970378337013516</span><br />
+    
+    <span>jump_minecraftia_a2_t - 0.0391053744113914</span><br />
+    
+    <span>jump_momentum - 0.03899297047264849</span><br />
+    
+    <span>jump_oddie_a4 - 0.0387056588407482</span><br />
+    
+    <span>jump_synapse_rc3_zip - 0.03737451168799462</span><br />
+    
+    <span>jump_seven - 0.03733263593353457</span><br />
+    
+    <span>jump_ariser_fix - 0.03671250004309087</span><br />
+    
+    <span>jump_abyss_rc2 - 0.03622528697674013</span><br />
+    
+    <span>jump_fart_final - 0.03510209319073133</span><br />
+    
+    <span>jump_sexydev_v3 - 0.03506087053555284</span><br />
+    
+    <span>jump_omega_redo_v2 - 0.03470001636272817</span><br />
+    
+    <span>jump_drought_b1 - 0.034383802403752106</span><br />
+    
+    <span>jump_detached_rcx - 0.03427105851351923</span><br />
+    
+    <span>jump_ionizer_tpn4 - 0.03374315359975803</span><br />
+    
+    <span>jump_requiem_a6 - 0.033647405827129634</span><br />
+    
+    <span>jump_hobo2_fixed - 0.03345806647591259</span><br />
+    
+    <span>jump_cyskic_final - 0.032807246600844435</span><br />
+    
+    <span>jump_boredfox2_b1 - 0.03248495132286376</span><br />
+    
+    <span>jump_frayb_a4 - 0.03230694406629512</span><br />
+    
+    <span>jump_mario_beta1_zip - 0.03194877992183815</span><br />
+    
+    <span>jump_sinister_final_ver2 - 0.03175733081832514</span><br />
+    
+    <span>jump_starkie_tpn - 0.031001933991130593</span><br />
+    
+    <span>jump_ultra_alpha - 0.030545285533777604</span><br />
+    
+    <span>jump_sampi_rc5 - 0.030034733965723655</span><br />
+    
+    <span>jump_ziggurat_b3_zip - 0.03002535333110391</span><br />
+    
+    <span>jump_keratotomy_b8 - 0.02908818763178944</span><br />
+    
+    <span>jump_mohaxish_rc2 - 0.02791662923800149</span><br />
+    
+    <span>jump_sick - 0.027837427211889372</span><br />
+    
+    <span>jump_something_rc1_fix_v2 - 0.027801137586486523</span><br />
+    
+    <span>jump_homie_beta - 0.027338943092690336</span><br />
+    
+    <span>jump_surfzzz_v1 - 0.027104118278918888</span><br />
+    
+    <span>jump_chasm_final - 0.02706643575223023</span><br />
+    
+    <span>jump_naught_v3 - 0.026991322600902656</span><br />
+    
+    <span>jump_rex_final - 0.02670202303835407</span><br />
+    
+    <span>jump_pathos - 0.02646890363398321</span><br />
+    
+    <span>jump_p - 0.02613561742183861</span><br />
+    
+    <span>jump_quick_b2 - 0.02587458518555775</span><br />
+    
+    <span>jump_soma_a7 - 0.025277942865869138</span><br />
+    
+    <span>jump_what - 0.02512752883839941</span><br />
+    
+    <span>sj_naissancee_tf2 - 0.024937183086326167</span><br />
+    
+    <span>jump_linear_final_fix - 0.02493219557905574</span><br />
+    
+    <span>jump_outmywindow_finallly - 0.02473384135632502</span><br />
+    
+    <span>jump_balls_fix - 0.024587071684420647</span><br />
+    
+    <span>jump_reverentia_rc2 - 0.024340526848895302</span><br />
+    
+    <span>jump_einfache_b1 - 0.023966336083114236</span><br />
+    
+    <span>jump_quake_beta4 - 0.02387699026721405</span><br />
+    
+    <span>jump_rapture - 0.023614417208820817</span><br />
+    
+    <span>jump_buttered_b2 - 0.023544868033037965</span><br />
+    
+    <span>jump_mirrorsedge_rc2 - 0.023058784177961818</span><br />
+    
+    <span>jump_musparium_rc3 - 0.02286874625142601</span><br />
+    
+    <span>jump_elephant_a2 - 0.022819226493388967</span><br />
+    
+    <span>jump_m0nkey_a5 - 0.02267121704806303</span><br />
+    
+    <span>jump_karb_b3 - 0.02262143926942978</span><br />
+    
+    <span>jump_fox - 0.022540755796357788</span><br />
+    
+    <span>jump_anxiety_a9 - 0.02210963525560354</span><br />
+    
+    <span>jump_beefmas - 0.022020501622654197</span><br />
+    
+    <span>jump_internal_b4 - 0.021870870583350105</span><br />
+    
+    <span>jump_shunix_v2 - 0.021295631336230345</span><br />
+    
+    <span>jump_sleepy_redo - 0.021173986494701726</span><br />
+    
+    <span>jump_pure_b2 - 0.021170481955998712</span><br />
+    
+    <span>jump_rehorus_final2 - 0.02112201672038601</span><br />
+    
+    <span>jump_quattro_rc1 - 0.020952972295365323</span><br />
+    
+    <span>jump_duey_v2 - 0.020135553251239193</span><br />
+    
+    <span>jump_gr8_wite_final - 0.020127741858217862</span><br />
+    
+    <span>jump_titan - 0.02009448084277474</span><br />
+    
+    <span>jump_watermelon_rc3 - 0.019811027599613146</span><br />
+    
+    <span>jump_power_rc3 - 0.01864141695785687</span><br />
+    
+    <span>jump_gman_beta5_final_rebuild_rc1 - 0.018060111072504947</span><br />
+    
+    <span>jump_m0rg_a2 - 0.01775315145461844</span><br />
+    
+    <span>jump_byhicrine - 0.01742610530730118</span><br />
+    
+    <span>jump_future_rebuild - 0.017276638984960003</span><br />
+    
+    <span>jump_twelve_rc1 - 0.017107724206106824</span><br />
+    
+    <span>jump_kael_final4 - 0.016972551958790008</span><br />
+    
+    <span>jump_cheval - 0.016964347584624773</span><br />
+    
+    <span>jump_jabroni - 0.016765425112688515</span><br />
+    
+    <span>jump_bunker_final - 0.016763671564147282</span><br />
+    
+    <span>jump_ayers_v2 - 0.016548613889025936</span><br />
+    
+    <span>jump_thorn_b5 - 0.016264599532941935</span><br />
+    
+    <span>jump_empusa_final - 0.015810509587446512</span><br />
+    
+    <span>jump_4demo_fixed5 - 0.015668348123238</span><br />
+    
+    <span>jump_canyon_b1 - 0.015457923036929224</span><br />
+    
+    <span>jump_mireal3_final - 0.014899433186567567</span><br />
+    
+    <span>jump_booyah_jmc - 0.014804047101208757</span><br />
+    
+    <span>jump_biome - 0.014607325392627171</span><br />
+    
+    <span>jump_purecio_b2 - 0.014249119541955001</span><br />
+    
+    <span>jump_nefarious_final - 0.01420159802091588</span><br />
+    
+    <span>jump_sauciix_v4 - 0.013871079577204798</span><br />
+    
+    <span>jump_catch_final - 0.013328544628688852</span><br />
+    
+    <span>jump_adventure - 0.012955253778375106</span><br />
+    
+    <span>jump_mouser - 0.012908997231758475</span><br />
+    
+    <span>jump_strike_b2_tpn - 0.012517676451289218</span><br />
+    
+    <span>jump_gaylord2 - 0.012176319419753948</span><br />
+    
+    <span>jump_lilith - 0.012061431571383854</span><br />
+    
+    <span>jump_panama - 0.011828231140376877</span><br />
+    
+    <span>jump_up - 0.011492386314630197</span><br />
+    
+    <span>jump_isak_b4 - 0.011410540881549294</span><br />
+    
+    <span>jump_craze - 0.011174970170143331</span><br />
+    
+    <span>jump_scorpion_b1 - 0.01103934894191933</span><br />
+    
+    <span>jump_fear_redo - 0.011010508080630721</span><br />
+    
+    <span>jump_aqua - 0.01082757620860174</span><br />
+    
+    <span>jump_demania_rc2 - 0.010231576423364298</span><br />
+    
+    <span>jump_spark_rc2 - 0.010039627183326438</span><br />
+    
+    <span>jump_cool_b2 - 0.009501298952632931</span><br />
+    
+    <span>jump_nuttwo_final - 0.009277186627103301</span><br />
+    
+    <span>jump_antiquity - 0.009253592073086398</span><br />
+    
+    <span>jump_lantern_tpn - 0.009134840027300464</span><br />
+    
+    <span>jump_bojack_v2 - 0.008692565020905601</span><br />
+    
+    <span>jump_factory - 0.008465440159695347</span><br />
+    
+    <span>jump_grimace - 0.008363196999739066</span><br />
+    
+    <span>jump_serpentine_final - 0.008235590946799536</span><br />
+    
+    <span>jump_flux - 0.008125518207043117</span><br />
+    
+    <span>jump_ursprung_final - 0.007749544858212585</span><br />
+    
+    <span>jump_polar - 0.0073616421166162556</span><br />
+    
+    <span>jump_nova_a8 - 0.007252577619795556</span><br />
+    
+    <span>jump_starwars_rc2 - 0.0069539397112263176</span><br />
+    
+    <span>jump_attached3_final - 0.00656609383294201</span><br />
+    
+    <span>jump_diamant_rc5 - 0.006558062170652051</span><br />
+    
+    <span>jump_swizzle_rc5 - 0.006547854953786585</span><br />
+    
+    <span>jump_turnip_v2 - 0.0063623284010587</span><br />
+    
+    <span>jump_nesmysl_final - 0.006051314412671877</span><br />
+    
+    <span>jump_rope_final - 0.006007479799033352</span><br />
+    
+    <span>jump_oats_b3 - 0.005773906831245333</span><br />
+    
+    <span>jump_tawatyr - 0.005136940294832074</span><br />
+    
+    <span>jump_xhappy - 0.0050231399912542525</span><br />
+    
+    <span>jump_bongwater - 0.004920079713042367</span><br />
+    
+    <span>jump_glow_v4 - 0.0047269593185510494</span><br />
+    
+    <span>jump_if_rc2 - 0.004502028138266347</span><br />
+    
+    <span>jump_ice_v4 - 0.004417686887728609</span><br />
+    
+    <span>jump_cavern_final - 0.004348119035610361</span><br />
+    
+    <span>jump_core_b1_zip - 0.0043087993580157805</span><br />
+    
+    <span>jump_ugly_b4 - 0.0042678378778402545</span><br />
+    
+    <span>jump_resi_b2 - 0.0037951592468639613</span><br />
+    
+    <span>jump_kilo - 0.003717241372838182</span><br />
+    
+    <span>jump_typh_a3 - 0.0032030379740208797</span><br />
+    
+    <span>jump_when_b2_fix - 0.003035305451136235</span><br />
+    
+    <span>jump_wolf - 0.002450976151447322</span><br />
+    
+    <span>jump_keep_final - 0.002358784016427658</span><br />
+    
+    <span>jump_butter - 0.0017598268376612437</span><br />
+    
+    <span>jump_tf2rj - 0.0015022871680077348</span><br />
+    
+    <span>jump_air - 0.001401070032698973</span><br />
+    
+    <span>jump_endurance_rc2 - 0.0009717646913446779</span><br />
+    
+    <span>jump_bait_a6 - 0.0006950366326405231</span><br />
+    
+    <span>jump_ahh_c - 0.0002361614049960428</span><br />
+    
+    <span>jump_lamia - 0.00017929943229333154</span><br />
+    
+    <span>jump_donut_v3 - 0.0001308960267149891</span><br />
+    
+    <span>jump_zetsubou_v3 - -0.0004111763826214749</span><br />
+    
+    <span>jump_4holers_fix - -0.00044658583646340483</span><br />
+    
+    <span>jump_sfw_final_zip - -0.0005743622093148204</span><br />
+    
+    <span>jump_tholos - -0.0007352474839174833</span><br />
+    
+    <span>jump_vampires_v4 - -0.0011586439788524034</span><br />
+    
+    <span>jump_4soldier_redo - -0.0012719157790554065</span><br />
+    
+    <span>jump_natural_b2 - -0.0014425962907590687</span><br />
+    
+    <span>jump_hanami_final_v2 - -0.0016775139146228781</span><br />
+    
+    <span>jump_the_b7 - -0.0016860926415458416</span><br />
+    
+    <span>jump_everest_a3 - -0.0021373136378663084</span><br />
+    
+    <span>jump_serenity_rc3 - -0.0021894529377001434</span><br />
+    
+    <span>jump_repente2_fix - -0.0022809185655554777</span><br />
+    
+    <span>jump_nights - -0.0025005133273501325</span><br />
+    
+    <span>jump_mireal_tpn - -0.0028204356083503675</span><br />
+    
+    <span>jump_network_b1 - -0.002901353143414259</span><br />
+    
+    <span>jump_quickers_b3 - -0.0036383007219315776</span><br />
+    
+    <span>jump_b00n - -0.003699870392197877</span><br />
+    
+    <span>jump_camp_rc2 - -0.003733250717063455</span><br />
+    
+    <span>jump_heck - -0.003745780639234713</span><br />
+    
+    <span>jump_zone_rc2 - -0.0039214721870655</span><br />
+    
+    <span>jump_kpop_a3 - -0.00394414241001636</span><br />
+    
+    <span>jump_artificial_a13 - -0.00415243135137403</span><br />
+    
+    <span>jump_zyma_final5 - -0.004278393984675291</span><br />
+    
+    <span>jump_annex_v5 - -0.004393539852798225</span><br />
+    
+    <span>jump_underground_final - -0.004649401728340216</span><br />
+    
+    <span>jump_home_v2 - -0.004801806548365123</span><br />
+    
+    <span>jump_umon_rc2 - -0.0048046719841707665</span><br />
+    
+    <span>jump_blubber_b4 - -0.004965353456133909</span><br />
+    
+    <span>jump_kuna - -0.004969574725310511</span><br />
+    
+    <span>jump_pickles_v2 - -0.005842317977674703</span><br />
+    
+    <span>jump_dang_r - -0.006177118084596878</span><br />
+    
+    <span>jump_forgotten_rc5 - -0.006689404764359184</span><br />
+    
+    <span>jump_recall - -0.0067451198028606225</span><br />
+    
+    <span>jump_excavation_final - -0.006811947740470169</span><br />
+    
+    <span>jump_vertigo - -0.007142194401405192</span><br />
+    
+    <span>jump_sync - -0.007764720690999255</span><br />
+    
+    <span>jump_koro_b2 - -0.007878778949626304</span><br />
+    
+    <span>jump_hangar_18 - -0.007884980306653053</span><br />
+    
+    <span>jump_flood - -0.00797425310415879</span><br />
+    
+    <span>jump_ofthehats_zip - -0.008030876419244241</span><br />
+    
+    <span>jump_stretch_final - -0.008071982408533936</span><br />
+    
+    <span>jump_soquete - -0.008201380125239592</span><br />
+    
+    <span>jump_undergrowth_zip - -0.008772001126251466</span><br />
+    
+    <span>jump_moo - -0.00932630925276072</span><br />
+    
+    <span>jump_esri - -0.009363586904192025</span><br />
+    
+    <span>jump_aando_b1_tmps - -0.009693819022510994</span><br />
+    
+    <span>jump_dahlia_b1 - -0.010178427836163231</span><br />
+    
+    <span>jump_desa_rc2 - -0.010753597409550317</span><br />
+    
+    <span>jump_mireal2_final - -0.011406561364575078</span><br />
+    
+    <span>jump_maso - -0.011633477073990506</span><br />
+    
+    <span>jump_sink_b4 - -0.012204306398679882</span><br />
+    
+    <span>jump_pagoda - -0.012351762687645672</span><br />
+    
+    <span>jump_vanilla - -0.012468566007695449</span><br />
+    
+    <span>jump_boredfox_b1 - -0.012593486433230288</span><br />
+    
+    <span>jump_ahrabaid_b2 - -0.012612896181706754</span><br />
+    
+    <span>jump_ywumpy_final2 - -0.01296079526524726</span><br />
+    
+    <span>jump_synth_a2 - -0.013117648543646401</span><br />
+    
+    <span>jump_pine_b1 - -0.013700580550779112</span><br />
+    
+    <span>jump_tsao_final - -0.014265034385122591</span><br />
+    
+    <span>jump_carp_b2 - -0.014435232673393358</span><br />
+    
+    <span>jump_bouncehop - -0.014602295945902965</span><br />
+    
+    <span>jump_noob2_ab - -0.01465644033994548</span><br />
+    
+    <span>jump_daylight_a2 - -0.015047245749611696</span><br />
+    
+    <span>jump_sohr_a5 - -0.015168029213124783</span><br />
+    
+    <span>jump_back_v3 - -0.015832967347323323</span><br />
+    
+    <span>jump_underworld_final - -0.015863283689374296</span><br />
+    
+    <span>jump_fifth - -0.016022279346528223</span><br />
+    
+    <span>jump_embrace - -0.016109923672577606</span><br />
+    
+    <span>jump_armaldo - -0.01659899234388748</span><br />
+    
+    <span>jump_revenge - -0.016926802644556607</span><br />
+    
+    <span>jump_cube_b4 - -0.01761657637407968</span><br />
+    
+    <span>jump_oreotopolis_c7 - -0.017667136121532243</span><br />
+    
+    <span>jump_hajnal_finalbeta - -0.01787025658343511</span><br />
+    
+    <span>jump_yump_final1 - -0.01797721987411132</span><br />
+    
+    <span>jump_jynkky_final1 - -0.018138227871954116</span><br />
+    
+    <span>jump_alienvspredator_v3 - -0.01826446949536091</span><br />
+    
+    <span>jump_demonstrationman_a4 - -0.01830142772733149</span><br />
+    
+    <span>jump_fisyx - -0.018606849424087676</span><br />
+    
+    <span>jump_rabbit_final3 - -0.019126068643427325</span><br />
+    
+    <span>jump_rickoconnell - -0.019153666894775417</span><br />
+    
+    <span>jump_rewind - -0.01933336059619441</span><br />
+    
+    <span>jump_twist_beta - -0.019833795900464118</span><br />
+    
+    <span>jump_meora_rc6 - -0.019995696196126934</span><br />
+    
+    <span>jump_krakatoa_final - -0.02069517604507582</span><br />
+    
+    <span>jump_rayner_a1_fixed - -0.021926065425921182</span><br />
+    
+    <span>jump_void_b1 - -0.022102421376676566</span><br />
+    
+    <span>jump_hoi - -0.022333342730795017</span><br />
+    
+    <span>jump_renard - -0.023020406251987594</span><br />
+    
+    <span>jump_ablation_b4 - -0.02319096566297404</span><br />
+    
+    <span>jump_sore_a4 - -0.023486734159750534</span><br />
+    
+    <span>jump_vex_final - -0.023593485759646537</span><br />
+    
+    <span>jump_ascent_final - -0.023794552275980638</span><br />
+    
+    <span>jump_bouncelicious - -0.02401544525634296</span><br />
+    
+    <span>jump_bigbutt_b1 - -0.02409148128328277</span><br />
+    
+    <span>jump_impulse_a2 - -0.024508727259086163</span><br />
+    
+    <span>jump_rnc_a1 - -0.02451007998917419</span><br />
+    
+    <span>jump_bouncerific_v2 - -0.024899336765966226</span><br />
+    
+    <span>jump_karelia_b1 - -0.024991652047925413</span><br />
+    
+    <span>rj_training_v3 - -0.02500089010067672</span><br />
+    
+    <span>jump_devils_redo - -0.025721681302798255</span><br />
+    
+    <span>jump_storm_final - -0.02572188915835165</span><br />
+    
+    <span>jump_nevar_a1 - -0.025765575365955737</span><br />
+    
+    <span>jump_nmotion2 - -0.02644398935615433</span><br />
+    
+    <span>jump_omega3_jam_tf2 - -0.02649139398348519</span><br />
+    
+    <span>jump_speed2 - -0.02672405016002094</span><br />
+    
+    <span>jump_tpn_rc3 - -0.026810408944765694</span><br />
+    
+    <span>jump_ideation_b5 - -0.027882975993101897</span><br />
+    
+    <span>jump_remember_beta - -0.02805541817418168</span><br />
+    
+    <span>jump_airships_v2 - -0.02848646921101122</span><br />
+    
+    <span>jump_kin - -0.028780087766377308</span><br />
+    
+    <span>jump_skip_b3 - -0.029125702534841695</span><br />
+    
+    <span>jump_mowi_rc2 - -0.029529442865578914</span><br />
+    
+    <span>jump_style - -0.029565958612082038</span><br />
+    
+    <span>jump_anime - -0.029605649906773137</span><br />
+    
+    <span>jump_ezpz_v4 - -0.030325149162984576</span><br />
+    
+    <span>jump_lite_a0 - -0.03036288944055899</span><br />
+    
+    <span>jump_turnuround_fix - -0.03064433297703475</span><br />
+    
+    <span>jump_zero_v2 - -0.032081916586435714</span><br />
+    
+    <span>jump_raina - -0.03230783133956992</span><br />
+    
+    <span>jump_destination - -0.03234793659397246</span><br />
+    
+    <span>jump_destination_v2 - -0.0327280849509281</span><br />
+    
+    <span>jump_zekro_v4 - -0.03285513425677727</span><br />
+    
+    <span>jump_sor_a4 - -0.03290027607168158</span><br />
+    
+    <span>jump_pandemonium - -0.03316558889952394</span><br />
+    
+    <span>jump_aggregate_zip - -0.03344783058296778</span><br />
+    
+    <span>jump_sorh_a1 - -0.033572096661943836</span><br />
+    
+    <span>jump_who - -0.03357892355362756</span><br />
+    
+    <span>jump_apparition - -0.033663346440774976</span><br />
+    
+    <span>jump_4dakids_final - -0.03381995566138692</span><br />
+    
+    <span>jump_owakare - -0.034519645954940496</span><br />
+    
+    <span>jump_cetalu_rc1 - -0.03461753314558387</span><br />
+    
+    <span>jump_omega2_final - -0.03476217182297901</span><br />
+    
+    <span>jump_collab - -0.03636852386060692</span><br />
+    
+    <span>jump_aperture_rc15 - -0.03657084028156119</span><br />
+    
+    <span>jump_tx_final - -0.03676982153061985</span><br />
+    
+    <span>jump_overhead - -0.03684753165755361</span><br />
+    
+    <span>jump_frost_a1 - -0.03795148342106651</span><br />
+    
+    <span>jump_composite - -0.03802229296170144</span><br />
+    
+    <span>jump_overhead2 - -0.038543170485710314</span><br />
+    
+    <span>jump_quba - -0.03859196741049861</span><br />
+    
+    <span>jump_junk_solly_b1 - -0.038808961639147196</span><br />
+    
+    <span>jump_codegreen_b4 - -0.038901939422667384</span><br />
+    
+    <span>jump_jorgelayja_redo - -0.03892557990489713</span><br />
+    
+    <span>jump_abuq - -0.03893966543427522</span><br />
+    
+    <span>jump_rewind2 - -0.039373881995152356</span><br />
+    
+    <span>jump_onit_b4 - -0.03952486365900443</span><br />
+    
+    <span>jump_jakey_a2 - -0.039651896498802734</span><br />
+    
+    <span>jump_dreamy_final_fix - -0.03988500213848635</span><br />
+    
+    <span>jump_blables_b2 - -0.039888418919138434</span><br />
+    
+    <span>jump_dahl - -0.0399463860691222</span><br />
+    
+    <span>jump_evolved_final - -0.04004222415792709</span><br />
+    
+    <span>jump_benroads_a5 - -0.04009321656143971</span><br />
+    
+    <span>jump_raven_b1 - -0.040162282974481565</span><br />
+    
+    <span>jump_timtam_rc2 - -0.04018361905182823</span><br />
+    
+    <span>jump_manitou - -0.04043217801230787</span><br />
+    
+    <span>jump_sitood_zip - -0.040915461852601615</span><br />
+    
+    <span>jump_heavy_b1 - -0.04091980020336068</span><br />
+    
+    <span>jump_ultimatebuttfucker_a2 - -0.040991080017913205</span><br />
+    
+    <span>jump_cake - -0.04121449305578793</span><br />
+    
+    <span>jump_psycho_zip - -0.04154407863072689</span><br />
+    
+    <span>jump_blueberry_b3 - -0.041885730912648245</span><br />
+    
+    <span>jump_signal_final - -0.04197521223306662</span><br />
+    
+    <span>jump_steel_b1 - -0.04199686182566587</span><br />
+    
+    <span>jump_majoras_a3 - -0.04224234687054993</span><br />
+    
+    <span>jump_dread_a3 - -0.04247905491346632</span><br />
+    
+    <span>jump_frost_redo_v2 - -0.04271847353750009</span><br />
+    
+    <span>jump_desolate_rc6 - -0.04286775269978954</span><br />
+    
+    <span>jump_oretachi_rc5 - -0.04347469379943558</span><br />
+    
+    <span>jump_qodu_rc1 - -0.043793190269083265</span><br />
+    
+    <span>jump_smellmybum - -0.04380909419754412</span><br />
+    
+    <span>jump_babylon - -0.04414695261605712</span><br />
+    
+    <span>jump_hexahedron - -0.044512793875944597</span><br />
+    
+    <span>jump_lost_a6 - -0.04487715702895438</span><br />
+    
+    <span>jump_supersereious_rc1 - -0.04496077346623519</span><br />
+    
+    <span>jump_obelisk_rc1_zip - -0.045104855983078423</span><br />
+    
+    <span>jump_xtra_swing_b1 - -0.04557761452618464</span><br />
+    
+    <span>jump_sobel - -0.04564107493531638</span><br />
+    
+    <span>jump_rook_beta - -0.04581123026795446</span><br />
+    
+    <span>jump_bob_fixed - -0.04586108160416657</span><br />
+    
+    <span>jump_chocological - -0.046578613762092935</span><br />
+    
+    <span>jump_heaven_a3 - -0.04658084765401253</span><br />
+    
+    <span>jump_flukhtiz_v2_b2 - -0.046734435278174793</span><br />
+    
+    <span>jump_exilenpals - -0.0469502212495795</span><br />
+    
+    <span>jump_concept_a5 - -0.047246833730325725</span><br />
+    
+    <span>jump_doodle_b9 - -0.04773728833739286</span><br />
+    
+    <span>jump_dang - -0.04783371689043683</span><br />
+    
+    <span>jump_competitive_b2 - -0.04785614941256406</span><br />
+    
+    <span>jump_ante - -0.04802445955111698</span><br />
+    
+    <span>jump_simplified_rc1 - -0.048035740727622456</span><br />
+    
+    <span>jump_skylight - -0.048701460344200816</span><br />
+    
+    <span>jump_lolparty - -0.049102617673398366</span><br />
+    
+    <span>jump_pmuj_rc2 - -0.0492791723835619</span><br />
+    
+    <span>jump_omega - -0.049391703067687136</span><br />
+    
+    <span>jump_arugula_b4 - -0.04956726827842486</span><br />
+    
+    <span>jump_benroads2_a3 - -0.05003851557145394</span><br />
+    
+    <span>jump_edgebug_b2 - -0.050114586705729665</span><br />
+    
+    <span>jump_torii_v3 - -0.05026050737956435</span><br />
+    
+    <span>jump_rush_h - -0.05034232644079953</span><br />
+    
+    <span>jump_tf - -0.050349451803922654</span><br />
+    
+    <span>jump_abandon - -0.05113594665542817</span><br />
+    
+    <span>jump_horus_b5_tpn - -0.051742067228427245</span><br />
+    
+    <span>jump_elite - -0.051758667082529464</span><br />
+    
+    <span>jump_stress_final - -0.0526846923916259</span><br />
+    
+    <span>jump_descent_v5 - -0.053418298504418406</span><br />
+    
+    <span>jump_damer_rc6 - -0.05415142345501146</span><br />
+    
+    <span>jump_dink_b2 - -0.05448529218946885</span><br />
+    
+    <span>jump_rebound_v3 - -0.05450385061481144</span><br />
+    
+    <span>jump_lanc_v3 - -0.05569358761302059</span><br />
+    
+    <span>jump_mohr - -0.0556992812457088</span><br />
+    
+    <span>jump_azure_v2 - -0.056162225763314456</span><br />
+    
+    <span>jump_ - -0.05621308363075883</span><br />
+    
+    <span>jump_tesseract_fix_v2 - -0.05742238864619918</span><br />
+    
+    <span>jump_baqu_a2 - -0.05761916969810155</span><br />
+    
+    <span>jump_kusok - -0.05827424107387949</span><br />
+    
+    <span>jump_flow_redo - -0.05830002168918191</span><br />
+    
+    <span>jump_ofc_v2 - -0.058503332227286646</span><br />
+    
+    <span>jump_lafing - -0.05968871593771061</span><br />
+    
+    <span>jump_koi - -0.05983940492278178</span><br />
+    
+    <span>jump_how - -0.059947761152182075</span><br />
+    
+    <span>jump_repente_b4 - -0.060377275918271904</span><br />
+    
+    <span>jump_crunch - -0.06116547566338403</span><br />
+    
+    <span>jump_toot_rc4 - -0.06193750334334364</span><br />
+    
+    <span>jump_mourn_a3 - -0.061948062565186625</span><br />
+    
+    <span>jump_kek_final3 - -0.062411031458823076</span><br />
+    
+    <span>jump_aviator - -0.06244625559775741</span><br />
+    
+    <span>jump_weekly_rc2 - -0.06252767807681472</span><br />
+    
+    <span>jump_chambers_v2 - -0.06276748400297097</span><br />
+    
+    <span>jump_jorgelayja_tmps - -0.06286402439599152</span><br />
+    
+    <span>jump_schadenfreude_rc1 - -0.06324100977194091</span><br />
+    
+    <span>jump_wallfox_rc1 - -0.0633476217372125</span><br />
+    
+    <span>jump_beyond_b3 - -0.06363403792965878</span><br />
+    
+    <span>jump_aurora_v2 - -0.06372051479894492</span><br />
+    
+    <span>jump_steak_a2 - -0.0638045265030531</span><br />
+    
+    <span>jump_christmas_zip - -0.06388675312331689</span><br />
+    
+    <span>jump_impact - -0.06419125820009967</span><br />
+    
+    <span>jump_orestes - -0.06491875655694032</span><br />
+    
+    <span>jump_phase_b4 - -0.06492441413610857</span><br />
+    
+    <span>jump_littleman_v4 - -0.06539449460832207</span><br />
+    
+    <span>jump_toxic_v6 - -0.06540352423472127</span><br />
+    
+    <span>jump_nysel_final2 - -0.0655004957481164</span><br />
+    
+    <span>jump_benroads3 - -0.06600363945024142</span><br />
+    
+    <span>jump_temple_final - -0.0683284997201715</span><br />
+    
+    <span>jump_tapdance_fix3 - -0.06865552306893874</span><br />
+    
+    <span>jump_nbn_b4b_redo_a1 - -0.06888592562036717</span><br />
+    
+    <span>jump_mirage - -0.06906576240350529</span><br />
+    
+    <span>jump_start_h - -0.06915902105584135</span><br />
+    
+    <span>jump_ezekiel_beta3 - -0.06919559841717793</span><br />
+    
+    <span>jump_rush - -0.0693339557497188</span><br />
+    
+    <span>jump_legion_beta3 - -0.0693638568767266</span><br />
+    
+    <span>jump_diirtyxweezy_a1 - -0.06942903066919312</span><br />
+    
+    <span>jump_aridia - -0.07007404162629881</span><br />
+    
+    <span>jump_over_beta - -0.0702894824194538</span><br />
+    
+    <span>jump_drenched - -0.07095146796026063</span><br />
+    
+    <span>jump_pants_b2 - -0.07218480254912975</span><br />
+    
+    <span>jump_shiver - -0.0724068878830206</span><br />
+    
+    <span>jump_claustro_final - -0.07248392914787938</span><br />
+    
+    <span>jump_gateway_final - -0.07278355382825913</span><br />
+    
+    <span>jump_sanctuary_final - -0.07304037728951535</span><br />
+    
+    <span>jump_termywermy_beta4 - -0.07307726916948555</span><br />
+    
+    <span>jump_nmotion_v8 - -0.07411761803284718</span><br />
+    
+    <span>jump_aigis_a4 - -0.07616730761947657</span><br />
+    
+    <span>jump_tensor_a2_zip - -0.07631685577519856</span><br />
+    
+    <span>jump_autumn_rc3 - -0.07652175665462915</span><br />
+    
+    <span>jump_jormp - -0.07745337682701062</span><br />
+    
+    <span>jump_rebus - -0.07910697636828419</span><br />
+    
+    <span>jump_dan2 - -0.07923945438370174</span><br />
+    
+    <span>jump_dreamier - -0.07966928876677784</span><br />
+    
+    <span>jump_geronimo - -0.08059975014190081</span><br />
+    
+    <span>jump_foss - -0.08081967615285585</span><br />
+    
+    <span>jump_mad_rc3 - -0.0813830676355762</span><br />
+    
+    <span>jump_hopstep_a3 - -0.08179373217429817</span><br />
+    
+    <span>jump_contact - -0.08183103107110294</span><br />
+    
+    <span>jump_egyptian_b2 - -0.0838376575987324</span><br />
+    
+    <span>jump_auga_final - -0.08401460308514315</span><br />
+    
+    <span>jump_vanished - -0.08539911848704522</span><br />
+    
+    <span>jump_gaylord - -0.08667011258118222</span><br />
+    
+    <span>jump_hydrogen_rc1_bmv - -0.08678870681856063</span><br />
+    
+    <span>jump_pandemonium_v4 - -0.08684164486274347</span><br />
+    
+    <span>jump_silly_fin - -0.0872625345259771</span><br />
+    
+    <span>jump_simply_v2 - -0.08734101300906012</span><br />
+    
+    <span>jump_spectre - -0.08762451323662084</span><br />
+    
+    <span>jump_sketchy2_rc1_zip - -0.08887887462678083</span><br />
+    
+    <span>jump_shimano_a3 - -0.08985102190090256</span><br />
+    
+    <span>jump_sdm_final_zip - -0.08997600305548809</span><br />
+    
+    <span>jump_kinetics_c1 - -0.09001624575391928</span><br />
+    
+    <span>jump_redplanet_v2 - -0.09111698890373894</span><br />
+    
+    <span>jump_fizzydrink_a2 - -0.09136468727120049</span><br />
+    
+    <span>jump_sweetnawful_rc2 - -0.09142097434240078</span><br />
+    
+    <span>jump_plaza - -0.09395846720606739</span><br />
+    
+    <span>jump_drheinz - -0.09631793139995501</span><br />
+    
+    <span>jump_carrot_a5 - -0.09686830270512527</span><br />
+    
+    <span>jump_huh_b6 - -0.09870725352523209</span><br />
+    
+    <span>jump_valley_final - -0.09950955337326671</span><br />
+    
+    <span>jump_strikapult_v11 - -0.09983808334251917</span><br />
+    
+    <span>jump_eons_b2 - -0.10063577479539045</span><br />
+    
+    <span>jump_wallclimb_v1alpha - -0.10185675799325716</span><br />
+    
+    <span>jump_iser_a3 - -0.10446420407069527</span><br />
+    
+    <span>jump_foundation_a2 - -0.10487016275799697</span><br />
+    
+    <span>jump_moist_v2_fix - -0.10534530119481608</span><br />
+    
+    <span>jump_bear - -0.10548954155771505</span><br />
+    
+    <span>jump_propel_fixed_v3 - -0.10569419131770269</span><br />
+    
+    <span>jump_treasure_fix - -0.106107959877155</span><br />
+    
+    <span>jump_why_rc3 - -0.10665025938921455</span><br />
+    
+    <span>jump_stella_v2 - -0.10668932902029228</span><br />
+    
+    <span>jump_banane - -0.10671083998526674</span><br />
+    
+    <span>jump_it_final - -0.10717998016416612</span><br />
+    
+    <span>jump_noskillrequired_b3 - -0.10850013809587279</span><br />
+    
+    <span>jump_deserted_b1 - -0.10960256367778147</span><br />
+    
+    <span>jump_jurf_a2 - -0.11061819576675522</span><br />
+    
+    <span>jump_fauvism_a2 - -0.11119727258767823</span><br />
+    
+    <span>jump_nincompoop_final - -0.11250427749034392</span><br />
+    
+    <span>jump_echelon_rc1 - -0.11266749692122545</span><br />
+    
+    <span>jump_4starters_rc1 - -0.11269587176303632</span><br />
+    
+    <span>jump_manifestation_fix - -0.11446201714547044</span><br />
+    
+    <span>jump_lotus_fix - -0.11544647430750495</span><br />
+    
+    <span>jump_allstars_fix - -0.11736669885046211</span><br />
+    
+    <span>jump_hardware - -0.1180574640866519</span><br />
+    
+    <span>jump_finite_v2 - -0.11908494945904623</span><br />
+    
+    <span>jump_pharaoh_a6 - -0.11927944956274847</span><br />
+    
+    <span>jump_soar_a4 - -0.12190009474539286</span><br />
+    
+    <span>jump_knight_final - -0.12208101259476915</span><br />
+    
+    <span>jump_stleganickling_v1 - -0.12633010048846358</span><br />
+    
+    <span>jump_jurf2_a1 - -0.12703677049696482</span><br />
+    
+    <span>jump_ofcourse_redo_final - -0.13026687312274543</span><br />
+    
+    <span>jump_claustro_v2 - -0.1309383787457633</span><br />
+    
+    <span>jump_bonus - -0.13214897787277727</span><br />
+    
+    <span>jump_sven_b1 - -0.13266208062368137</span><br />
+    
+    <span>jump_vulc_a2 - -0.13352013981614277</span><br />
+    
+    <span>jump_yggdrasil - -0.137140008302527</span><br />
+    
+    <span>jump_lion_a6 - -0.1417525511595233</span><br />
+    
+    <span>jump_waves_final - -0.14212436065772524</span><br />
+    
+    <span>jump_bangarang - -0.14511624422198569</span><br />
+    
+    <span>jump_apex_b1 - -0.14753758226805963</span><br />
+    
+    <span>jump_start_b4 - -0.14808902676859448</span><br />
+    
+    <span>jump_ddpls - -0.14823048364183627</span><br />
+    
+    <span>jump_summer_rc1 - -0.14839613430816417</span><br />
+    
+    <span>jump_around_cr - -0.14941662915382062</span><br />
+    
+    <span>jump_rainbow - -0.15141267019870025</span><br />
+    
+    <span>jump_sira_alpha - -0.15798232665989467</span><br />
+    
+    <span>jump_exile_v3 - -0.15945777006784834</span><br />
+    
+    <span>jump_above_rc1 - -0.1703471673092877</span><br />
+    
+    <span>jump_super_v5 - -0.17297393879026848</span><br />
+    
+    <span>jump_speed - -0.17568889351075961</span><br />
+    
+    <span>jump_arc_b1_tmps - -0.17949055892498256</span><br />
+    
+</div>
+
+<script>
+    document.querySelector('#submit').addEventListener('click', (event) => {
+        event.preventDefault();
+        let playerId = document.querySelector('#player-id').value;
+        let classId = document.querySelector('#class-id').value;
+        let basePath = window.location.href.split("/player")[0];
+        window.location.href = `${basePath}/player/${playerId}/${classId}`;
+    });
+
+    document.querySelector('#class-id').value = "3";
+</script>
