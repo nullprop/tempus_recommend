@@ -1,8 +1,7 @@
-from .model import print_top_similar, load_model, create_model, train_model, get_similar
-from .db import create_db, get_player_tts, get_players
+from .model import load_model, create_model, train_model, get_similar
+from .db import create_db, get_player_tts, get_players, get_maps
 
 __all__ = (
-    print_top_similar,
     load_model,
     create_model,
     train_model,
@@ -10,4 +9,5 @@ __all__ = (
     get_player_tts,
     get_similar,
     get_players,
+    get_maps,
 )

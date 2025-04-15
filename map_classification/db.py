@@ -200,11 +200,18 @@ def get_maps():
     c = conn.cursor()
 
     c.execute(
-        "SELECT id, name from maps",
+        "SELECT id, name, stier, dtier, srating, drating from maps",
     )
     rows = c.fetchall()
 
     maps = []
     for row in rows:
-        maps.append({"id": int(row[0]), "name": row[1]})
+        maps.append({
+            "id": int(row[0]),
+            "name": row[1],
+            "stier": row[2],
+            "dtier": row[3],
+            "srating": row[4],
+            "drating": row[5]
+        })
     return maps

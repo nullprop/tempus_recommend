@@ -97,62 +97,6 @@ def _get_dimensions():
     return x, y
 
 
-def print_top_similar(positive, negative, n):
-    global playerset
-    global tts
-    global map_to_id
-    global id_to_map
-    if map_to_id is None:
-        playerset, tts, map_to_id, id_to_map = get_tts(num_times)
-
-    data = _get_feature_vector(FEATURE_MODEL)
-
-    for mapname in positive:
-        if mapname not in map_to_id:
-            print(mapname + " not found!")
-            return
-    for mapname in negative:
-        if mapname not in map_to_id:
-            print(mapname + " not found!")
-            return
-    # to sum features on
-    map_features = np.zeros(len(data[0]))
-    for mapname in positive:
-        map_id = mapdata_reduced_map[map_to_id[mapname]]
-        map_features += data[map_id]
-    for mapname in negative:
-        map_id = mapdata_reduced_map[map_to_id[mapname]]
-        map_features -= data[map_id]
-
-    # build dict of similar maps:
-    similarity = {}
-    for i, features in enumerate(data):
-        similarity[i] = cosine_similarity(map_features, features)
-    sorted_maps = sorted(similarity.items(), key=lambda kv: -kv[1])
-    # print(sorted_maps)
-    print("Most similar maps to " + str(positive) + " - " + str(negative) + ":")
-    n_printed = 0
-    i = 0
-    while n_printed < n or i == len(data):
-        mapname = id_to_map[mapdata_reduced_map_reversed[sorted_maps[i][0]]]
-        if mapname not in positive and mapname not in negative:
-            print(n_printed, mapname.ljust(25), sorted_maps[i][1])
-            n_printed += 1
-        i += 1
-
-    sorted_maps_reverse = sorted(similarity.items(), key=lambda kv: kv[1])
-    print("\n")
-    print("Least similar maps to " + str(positive) + " - " + str(negative) + ":")
-    n_printed = 0
-    i = 0
-    while n_printed < n or i == len(data):
-        mapname = id_to_map[mapdata_reduced_map_reversed[sorted_maps_reverse[i][0]]]
-        if mapname not in positive and mapname not in negative:
-            print(n_printed, mapname.ljust(25), sorted_maps_reverse[i][1])
-            n_printed += 1
-        i += 1
-
-
 def get_similar(positive):
     global playerset
     global tts
