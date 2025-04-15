@@ -15,28 +15,55 @@ def create_db(name):
     print("creating tables")
     # create maps table
     c.execute(
-        """CREATE TABLE IF NOT EXISTS maps (id INTEGER PRIMARY KEY NOT NULL, name TEXT, stier INTEGER, dtier INTEGER, svid TEXT, dvid TEXT, authors TEXT)"""
+        """CREATE TABLE IF NOT EXISTS maps (
+            id INTEGER PRIMARY KEY NOT NULL,
+            name TEXT,
+            stier INTEGER,
+            dtier INTEGER,
+            srating INTEGER,
+            drating INTEGER,
+            svid TEXT,
+            dvid TEXT,
+            authors TEXT
+        )"""
     )
     # create times table
     c.execute(
-        """CREATE TABLE IF NOT EXISTS times (id INTEGER PRIMARY KEY NOT NULL, map_id INTEGER, user_id INTEGER, class INTEGER, rank INTEGER, date REAL, duration REAL,
-        FOREIGN KEY (map_id) REFERENCES maps (id), FOREIGN KEY (user_id) REFERENCES users (id))"""
+        """CREATE TABLE IF NOT EXISTS times (
+            id INTEGER PRIMARY KEY NOT NULL,
+            map_id INTEGER,
+            user_id INTEGER,
+            class INTEGER,
+            rank INTEGER,
+            date REAL,
+            duration REAL,
+            FOREIGN KEY (map_id) REFERENCES maps (id), FOREIGN KEY (user_id) REFERENCES users (id)
+        )"""
     )
     # create users table
     c.execute(
-        """CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY NOT NULL, steamid TEXT, name TEXT)"""
+        """CREATE TABLE IF NOT EXISTS users (
+            id INTEGER PRIMARY KEY NOT NULL,
+            steamid TEXT,
+            name TEXT
+        )"""
     )
 
     print("inserting data")
     for x in range(0, len(maps)):
         # add map to maps table
         c.execute(
-            """INSERT OR REPLACE INTO maps (id, name, stier, dtier, svid, dvid, authors) VALUES (?, ?, ?, ?, ?, ?, ?)""",
+            """INSERT OR REPLACE INTO maps
+                (id, name, stier, dtier, srating, drating, svid, dvid, authors)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
             (
                 maps[x]["map"]["id"],
                 maps[x]["map"]["name"],
                 maps[x]["map"]["tier_info"]["3"],
                 maps[x]["map"]["tier_info"]["4"],
+                maps[x]["map"]["rating_info"]["3"],
+                maps[x]["map"]["rating_info"]["4"],
                 maps[x]["map"]["videos"]["soldier"],
                 maps[x]["map"]["videos"]["demoman"],
                 str(maps[x]["map"]["authors"]),
