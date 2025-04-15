@@ -9,7 +9,7 @@ headers = {"Accept": "application/json"}
 time_start = time.time()
 requests_sent = None
 top_times = 50
-
+threads=4
 
 def get_all():
     global requests_sent
@@ -24,7 +24,7 @@ def get_all():
     # we get can only get 50 runs at a time,
     # and we need to wait the for response to determine if we need to get another 50 or if we are done
     pool = multiprocessing.Pool(
-        processes=4, initializer=init, initargs=(requests_sent,)
+        processes=threads, initializer=init, initargs=(requests_sent,)
     )
     all_maps = []
     # maps = maps[0:2]
@@ -79,9 +79,14 @@ def maps_thread(_map):
 
 def get_maps():
     r = requests.get(apiurl + "maps/detailedList", headers=headers)
+
     global requests_sent
     with requests_sent.get_lock():
         requests_sent.value += 1
+
+    if r.status_code != 200:
+        raise Exception(f"Got bad response: {r.status_code} {r.text}")
+
     return r.json()
 
 
@@ -121,6 +126,8 @@ def get_times(_map):
 
 
 def loop_times(_map, i):
+    time.sleep(threads)
+
     r = requests.get(
         apiurl
         + "maps/name/"
@@ -129,9 +136,20 @@ def loop_times(_map, i):
         + str(i),
         headers=headers,
     )
+
     global requests_sent
     with requests_sent.get_lock():
         requests_sent.value += 1
+
+    if r.status_code == 429:
+        wait = max(10, min(60, int(r.headers["Retry-After"])))
+        print(f"hit ratelimit, sleeping {wait}s (requested {r.headers["Retry-After"]}s)")
+        time.sleep(wait)
+        return loop_times(_map, i)
+
+    if r.status_code != 200:
+        raise Exception(f"Got bad response: {r.status_code} {r.text}")
+
     return r.json()
 
 
