@@ -9,7 +9,7 @@ app.config["FREEZER_DESTINATION"] = "docs"
 
 from recommend import recommend_player, recommend_maps
 
-DB_DATE = "2024-12-30" # TODO get from db
+DB_DATE = "2025-04-15" # TODO get from db
 
 @app.route("/")
 def index():
